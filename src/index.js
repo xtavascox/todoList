@@ -1,5 +1,10 @@
-import {saludar} from './js/componentes'
-import './styles.css'
-const nombre='Gustavo Esteven Fajardo Cruz'
+import "./styles.css";
+import { Todo, TodoList } from "./classes/index";
+import { crearTodoHtml } from "./js/componentes";
 
-saludar(nombre);
+export const todoList = new TodoList();
+
+todoList.todos.forEach(crearTodoHtml);
+
+console.log(todoList)
+
